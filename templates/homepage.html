@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Conversion Calculator</title>
+</head>
+
+<body>
+    <h1>Currency Converter</h1>
+    <section class="messages">
+        {% for msg in get_flashed_messages() %}
+        <p>{{ msg }}</p>
+        {% endfor %}
+    </section>
+    <form action="/convert">
+        <label for="from_curr">Currency from</label>
+        <input type="text" class="currency1" name="from_curr">
+        <br>
+        <label for="to_curr">Currency to</label>
+        <input type="text" class="currency2" name="to_curr">
+        <br>
+        <label for="amount_from">Amount</label>
+        <input type="text" class="amount" name="amount_from">
+        <br>
+        <button>Enter</button>
+
+
+    </form>
+
+
+
+
+    <!-- <label for="from">Converting from </label>
+        <select name="moneyfrom" id="from">
+            <option value="USD">US Dollar - USD</option>
+            <option value="EUR"> Euro - EUR</option>
+            <option value="JPY">Japanese Yen - JPY</option>
+        </select>
+        <br>
+        <label for="to">Converting to </label>
+        <select name="moneyto" id="to">
+            <option value="USD">US Dollar - USD</option>
+            <option value="EUR"> Euro - EUR</option>
+            <option value="JPY">Japanese Yen - JPY</option>
+        </select>
+        <br>
+        <label for="amount">Amount</label>
+        <input type="text">
+        <br>
+        <input type="submit" value="Submit"> -->
+
+
+
+</body>
+
+<section>
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="/static/app.js"></script>
+    <!-- <script>
+        let newLookUp = new Lookup()
+    </script> -->
+
+</section>
+
+</html>
